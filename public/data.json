@@ -1,0 +1,132 @@
+[
+  {
+    "player_Id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://wallpapers.com/images/featured/virat-kohli-pictures-yc8dfpcjssp3s4se.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm medium",
+    "bidding_price": 2400000
+  },
+  {
+    "player_Id": 2,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://wallpapercave.com/wp/wp3051808.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm offbreak",
+    "bidding_price": 1800000
+  },
+  {
+    "player_Id": 3,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://media.gettyimages.com/id/1405860703/photo/birmingham-england-jasprit-bumrah-of-india-poses-during-a-portrait-session-at-edgbaston-on.jpg?s=612x612&w=0&k=20&c=Uaihm8DQHo4SRGcORJBqPzEc1o9B9rgX0LJ5lTuu9A4=",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm fast",
+    "bidding_price": 1700000
+  },
+  {
+    "player_Id": 4,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://www.famousbirthdays.com/faces/stokes-ben-image.jpg",
+    "role": "All-rounder",
+    "batting_type": "Left-hand bat",
+    "bowling_type": "Right-arm fast-medium",
+    "bidding_price": 2200000
+  },
+  {
+    "player_Id": 5,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0a7586b-3d38-4293-9d13-75e10782ff57/dgmum3l-342792b2-4bae-482e-9be0-4588b8d01ebf.png/v1/fit/w_375,h_336,q_70,strp/david_warner_with_beard_png_image_by_ongpng_dgmum3l-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODcxIiwicGF0aCI6IlwvZlwvYTBhNzU4NmItM2QzOC00MjkzLTlkMTMtNzVlMTA3ODJmZjU3XC9kZ211bTNsLTM0Mjc5MmIyLTRiYWUtNDgyZS05YmUwLTQ1ODhiOGQwMWViZi5wbmciLCJ3aWR0aCI6Ijw9OTczIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.YhIoRGyEwaUETqcPGtvLI5QBF88COt5qUIYqu_YGGAo",
+    "role": "Batsman",
+    "batting_type": "Left-hand bat",
+    "bowling_type": "Right-arm legbreak",
+    "bidding_price": 1900000
+  },
+  {
+    "player_Id": 6,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://c.ndtvimg.com/2024-06/qqaprcjo_trent-boult_625x300_15_June_24.jpg?im=FitAndFill,algorithm=dnn,width=240,height=180",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Left-arm fast-medium",
+    "bidding_price": 1600000
+  },
+  {
+    "player_Id": 7,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://celebs.infoseemedia.com/wp-content/uploads/2022/06/Babar-Azam-497x1024.png",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm offbreak",
+    "bidding_price": 2000000
+  },
+  {
+    "player_Id": 8,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://wallpaperaccess.com/full/5396068.jpg",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm legbreak",
+    "bidding_price": 1500000
+  },
+  {
+    "player_Id": 9,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://c.ndtvimg.com/2023-11/075r9f6k_glenn-maxwell-ani_640x480_07_November_23.jpg",
+    "role": "All-rounder",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm offbreak",
+    "bidding_price": 1800000
+  },
+  {
+    "player_Id": 10,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "image": "https://media.gettyimages.com/id/1055469120/de/foto/canberra-australia-kagiso-rabada-poses-during-the-south-africa-odi-t20-headshots-session-on.jpg?s=612x612&w=0&k=20&c=KG38UwouPbSGzNyCqI7-RP5giYT2oQgt8QY2aQ1eQLM=",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm fast",
+    "bidding_price": 1700000
+  },
+  {
+    "player_Id": 11,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://wallpapercave.com/wp/wp3988786.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm offbreak",
+    "bidding_price": 2300000
+  },
+  {
+    "player_Id": 12,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "image": "https://c.ndtvimg.com/2019-12/a4c9rp38_samsung_640x480_26_December_19.jpg",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm fast",
+    "bidding_price": 2100000
+  },
+  {
+    "player_Id": 13,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://images.icc-cricket.com/image/upload/t_ratio3_4-size20/prd/zshqqyknli5sx3te0g2j",
+    "role": "All-rounder",
+    "batting_type": "Left-hand bat",
+    "bowling_type": "Left-arm orthodox",
+    "bidding_price": 1400000
+  }
+]

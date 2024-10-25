@@ -25,7 +25,7 @@ const Card = () => {
                 <img
                   className="rounded-2xl h-52 w-full object-cover"
                   src={card.image}
-                  alt={card.name} // Providing a more meaningful alt attribute
+                  alt={card.name} 
                 />
               </figure>
               <div className="my-2">
@@ -46,7 +46,6 @@ const Card = () => {
                 <p className="font-bold text-gray-400">Rating</p>
                 <div className="flex justify-between items-center">
                   <p className="font-bold text-gray-400">{card.batting_type}</p>
-                  {/* Consider replacing this with another property if needed */}
                   <p className="font-bold text-gray-400">{card.batting_type}</p>
                 </div>
                 <div className="flex justify-between items-center mt-2">

@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
 import Newsletter from "./components/Newslatter/Newsletter";
+import SelectP from "./components/SelectPlayer/SelectP";
 
 function App() {
   const [toggleBtn, settoggleBtn] = useState({
@@ -12,28 +13,26 @@ function App() {
     status: "active",
   });
 
-
   // handleToggleBtn event listener
-const handleToggleBtn = (status) => {
-  if (status === 'available') {
-    settoggleBtn({
-      available: true,
-      status: "active",
-    });
-  } else {
-    settoggleBtn({
-      available: false,
-      status: "selected",
-    });
-  }
-};
-
+  const handleToggleBtn = (status) => {
+    if (status === "available") {
+      settoggleBtn({
+        available: true,
+        status: "active",
+      });
+    } else {
+      settoggleBtn({
+        available: false,
+        status: "selected",
+      });
+    }
+  };
 
   return (
     <>
       <Navbar />
-      <Hero toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn}/>
-      <Card />
+      <Hero toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn} />
+      {toggleBtn.available ? <Card /> : <SelectP />}
       <Footer />
       <Newsletter />
     </>

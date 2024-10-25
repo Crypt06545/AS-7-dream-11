@@ -25,7 +25,7 @@ const ToggleBtn = ({ handleToggleBtn, toggleBtn }) => {
         >
           Selected
         </button>
-      </div>
+      </div>  
     </div>
   );
 };

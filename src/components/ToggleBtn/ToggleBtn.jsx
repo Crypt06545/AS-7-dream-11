@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const ToggleBtn = ({ handleToggleBtn, toggleBtn, selectedPlayers }) => {
   return (
-    <div className="absolute -mb-[650px] lg:ml-[1050px]">
+    <div className="absolute -mb-[650px] md:ml-[700px] ">
       <div className="flex justify-center gap-4 items-center sticky z-40">
         {/* Available button */}
         <button

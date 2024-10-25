@@ -56,7 +56,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full p-2 rounded-l-md text-black"
+              className="w-full p-2 rounded-l-md text-white"
             />
             <button className="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-4 py-2 rounded-r-md">
               Subscribe

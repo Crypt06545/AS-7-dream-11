@@ -1,7 +1,9 @@
-const Hero = () => {
+import ToggleBtn from "../ToggleBtn/ToggleBtn";
+
+const Hero = ({handleToggleBtn}) => {
     return (
       <div
-        className="w-11/12 mx-auto my-11 bg-cover bg-center flex justify-center items-center bg-black"
+        className="w-11/12 mx-auto my-11 bg-cover bg-center flex justify-center items-center bg-black relative"
         style={{
           backgroundImage: "url('./bg-shadow.png')",
           borderRadius:24,
@@ -20,6 +22,7 @@ const Hero = () => {
             
           </div>
         </div>
+        <ToggleBtn handleToggleBtn={handleToggleBtn}/>
       </div>
     );
   };

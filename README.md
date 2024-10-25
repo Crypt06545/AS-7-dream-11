@@ -1,6 +1,6 @@
-# BPL-DREAM 11
+# DREAM 11
 
-Welcome to **BPL-DREAM 11**, a React-based application that allows users to select and manage cricket players for their fantasy team. This application follows a modern design inspired by Figma, providing a responsive and user-friendly interface for cricket enthusiasts.
+Welcome to **DREAM 11**, a React-based application that allows users to select and manage cricket players for their fantasy team. This application follows a modern design inspired by Figma, providing a responsive and user-friendly interface for cricket enthusiasts.
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@ Welcome to **BPL-DREAM 11**, a React-based application that allows users to sele
 </table>
 
 ## Sneak Peek of Home Page 🙈 :
-
+[Go Live](https://dream11-06.netlify.app/){:target="_blank"}
 ![home](./pitures/home.png)
 
 <table>
@@ -32,7 +32,7 @@ Welcome to **BPL-DREAM 11**, a React-based application that allows users to sele
 
 ## Description
 
-BPL-DREAM 11 enables users to build their dream cricket team by selecting players while managing their budget. Users can view available players, select their favorites, and remove players from their selection. The application includes a responsive navbar, an attractive banner, and a newsletter section for user engagement.
+DREAM 11 enables users to build their dream cricket team by selecting players while managing their budget. Users can view available players, select their favorites, and remove players from their selection. The application includes a responsive navbar, an attractive banner, and a newsletter section for user engagement.
 
 ## Key Features
 

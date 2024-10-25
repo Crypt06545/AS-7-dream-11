@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Card = () => {
+const Card = ({ handleSelectPlayer }) => {
   const [cards, setCards] = useState([]);
 
   // Fetch card data
@@ -25,7 +25,7 @@ const Card = () => {
                 <img
                   className="rounded-2xl h-52 w-full object-cover"
                   src={card.image}
-                  alt={card.name} 
+                  alt={card.name}
                 />
               </figure>
               <div className="my-2">
@@ -38,7 +38,7 @@ const Card = () => {
                     <i className="fa-solid fa-flag fa-fw mr-1"></i>
                     <span>{card.country}</span>
                   </div>
-                  <div className="bg-[#52836f] p-2 rounded-lg">
+                  <div className="bg-[#64d1a4] p-2 rounded-lg">
                     <p className="text-white">{card.role}</p>
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const Card = () => {
                     Price: ${card.bidding_price}
                   </p>
                   <button
-                    onClick={() => console.log("selected")}
+                    onClick={() => handleSelectPlayer(card)}
                     className="p-2 hover:bg-[#0BE58A] border-2 border-[#0BE58A] text-white hover:text-black rounded-xl"
                   >
                     Choose Player

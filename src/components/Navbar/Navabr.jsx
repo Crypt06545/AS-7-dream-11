@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ coinBalance }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between p-4 lg:w-11/12 mx-auto backdrop-blur-xl bg-opacity-5">
-      {/* Mobile Layout: Logo -> Coin -> Hamburger */}
       <div className="flex items-center justify-between w-full md:hidden">
         {/* Logo */}
         <div>
@@ -17,8 +16,8 @@ const Navbar = () => {
         </div>
 
         {/* Coin Section */}
-        <div className="flex items-center space-x-2">
-          <span className="text-white">0 Coins</span>
+        <div className="flex items-center space-x-2 border-2 p-2 border-gray-300 rounded-xl">
+          <span className="text-white ">{coinBalance} Coins</span> 
           <span>
             <img src="./coin.png" alt="Coin" className="h-6 w-6" />
           </span>
@@ -32,14 +31,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Layout: Logo -> Nav Items -> Coin */}
       <div className="hidden md:flex justify-between w-full items-center">
-        {/* Logo */}
         <div>
           <img src="./logo.png" alt="Logo" className="h-10 w-auto" />
         </div>
 
-        {/* Nav Links */}
         <ul className="flex space-x-8 text-gray-600">
           <li className="text-gray-400 font-medium hover:text-[#0BE58A]">
             <a href="#">Home</a>
@@ -56,15 +52,14 @@ const Navbar = () => {
         </ul>
 
         {/* Coin Section */}
-        <div className="flex items-center space-x-2">
-          <span className="text-white">0 Coins</span>
+        <div className="flex items-center space-x-2 border-2 p-2 border-gray-300 rounded-xl">
+          <span className="text-white ">{coinBalance} Coins</span> 
           <span>
             <img src="./coin.png" alt="Coin" className="h-6 w-6" />
           </span>
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       <ul
         className={`${
           isOpen ? 'block' : 'hidden'

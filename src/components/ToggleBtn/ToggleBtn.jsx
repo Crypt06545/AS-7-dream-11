@@ -1,4 +1,4 @@
-const ToggleBtn = ({ handleToggleBtn, toggleBtn }) => {
+const ToggleBtn = ({ handleToggleBtn, toggleBtn,selectedPlayers }) => {
   return (
     <div className="absolute -mb-[650px] lg:ml-[1050px]">
       <div className="flex justify-center gap-4 items-center sticky z-40">
@@ -23,7 +23,7 @@ const ToggleBtn = ({ handleToggleBtn, toggleBtn }) => {
               : "border-[#0BE58A] text-[#0BE58A]"
           }`}
         >
-          Selected
+          Selected ({selectedPlayers.length})
         </button>
       </div>  
     </div>

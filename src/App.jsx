@@ -17,18 +17,17 @@ function App() {
   const [coinBalance, setCoinBalance] = useState(0);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
- 
-
   const handleCoinBalance = (balance) => {
     setCoinBalance(balance);
   };
-
+  //  handle available toggel
   const handleToggleBtn = (status) => {
     settoggleBtn({
       available: status === "available",
       status: status === "available" ? "active" : "selected",
     });
   };
+
 
   // Function to handle player selection
   const handleSelectPlayer = (player) => {
@@ -37,7 +36,7 @@ function App() {
       return;
     }
 
-    const alreadySelected = selectedPlayers.some(
+    const alreadySelected = selectedPlayers.find(
       (selected) => selected.player_Id === player.player_Id
     );
 
@@ -48,7 +47,7 @@ function App() {
     } else {
       // Subtract the price from coin balance
       setCoinBalance(coinBalance - player.bidding_price);
-      // Add the player to the selected players list
+      // Add the player
       setSelectedPlayers([...selectedPlayers, player]);
       toast.success("Player selected successfully!");
     }
@@ -62,8 +61,6 @@ function App() {
     toast.success("Player removed successfully!");
   };
 
-
-
   return (
     <>
       <Navbar coinBalance={coinBalance} />
@@ -71,6 +68,7 @@ function App() {
         handleCoinBalance={handleCoinBalance}
         toggleBtn={toggleBtn}
         handleToggleBtn={handleToggleBtn}
+        selectedPlayers={selectedPlayers}
       />
       {toggleBtn.available ? (
         <Card handleSelectPlayer={handleSelectPlayer} />

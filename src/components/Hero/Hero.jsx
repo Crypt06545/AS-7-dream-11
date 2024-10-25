@@ -1,7 +1,7 @@
 import ToggleBtn from "../ToggleBtn/ToggleBtn";
 import { toast } from "react-toastify";
 
-const Hero = ({ handleToggleBtn, toggleBtn, handleCoinBalance }) => {
+const Hero = ({ handleToggleBtn, toggleBtn, handleCoinBalance,selectedPlayers }) => {
   const claimCoins = () => {
     // Display a success toast message
     toast.success("6000000 coins claimed successfully");
@@ -36,7 +36,7 @@ const Hero = ({ handleToggleBtn, toggleBtn, handleCoinBalance }) => {
           </button>
         </div>
       </div>
-      <ToggleBtn toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn} />
+      <ToggleBtn toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn} selectedPlayers={selectedPlayers}/>
     </div>
   );
 };

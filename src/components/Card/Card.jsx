@@ -23,7 +23,7 @@ const Card = ({ handleSelectPlayer }) => {
             >
               <figure>
                 <img
-                  className="rounded-2xl h-52 w-full object-cover"
+                  className="rounded-2xl h-60 w-full object-cover"
                   src={card.image}
                   alt={card.name}
                 />
@@ -44,13 +44,25 @@ const Card = ({ handleSelectPlayer }) => {
                 </div>
                 <div className="border-b-2 border-gray-400 my-4"></div>
                 <p className="font-bold text-gray-400">Rating</p>
-                <div className="flex justify-between items-center">
-                  <p className="font-bold text-gray-400">{card.batting_type}</p>
-                  <p className="font-bold text-gray-400">{card.batting_type}</p>
+                <div className="">
+                  {/* batting type  */}
+                  <div className="flex justify-between items-center">
+                    <h3 className="font-bold text-gray-400">Batting Type: </h3>
+                    <p className="font-bold text-gray-400">
+                      {card.batting_type}
+                    </p>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <h3 className="font-bold text-gray-400">Bowling Type: </h3>
+
+                    <p className="font-bold text-gray-400">
+                      {card.bowling_type}
+                    </p>
+                  </div>
                 </div>
                 <div className="flex justify-between items-center mt-2">
                   <p className="font-bold text-gray-400">
-                    Price: ${card.bidding_price}
+                    Price: {card.bidding_price} $
                   </p>
                   <button
                     onClick={() => handleSelectPlayer(card)}

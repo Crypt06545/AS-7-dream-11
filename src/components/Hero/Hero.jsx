@@ -1,11 +1,17 @@
 import ToggleBtn from "../ToggleBtn/ToggleBtn";
 import { toast } from "react-toastify";
+import PropTypes from "prop-types";
 
-const Hero = ({ handleToggleBtn, toggleBtn, handleCoinBalance,selectedPlayers }) => {
+const Hero = ({
+  handleToggleBtn,
+  toggleBtn,
+  handleCoinBalance,
+  selectedPlayers,
+}) => {
   const claimCoins = () => {
     // Display a success toast message
     toast.success("6000000 coins claimed successfully");
-    handleCoinBalance(prevBalance => prevBalance + 6000000); 
+    handleCoinBalance((prevBalance) => prevBalance + 6000000);
   };
 
   return (
@@ -36,9 +42,22 @@ const Hero = ({ handleToggleBtn, toggleBtn, handleCoinBalance,selectedPlayers })
           </button>
         </div>
       </div>
-      <ToggleBtn toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn} selectedPlayers={selectedPlayers}/>
+      <ToggleBtn
+        toggleBtn={toggleBtn}
+        handleToggleBtn={handleToggleBtn}
+        selectedPlayers={selectedPlayers}
+      />
     </div>
   );
+};
+Hero.propTypes = {
+  handleToggleBtn: PropTypes.func.isRequired,
+  toggleBtn: PropTypes.shape({
+    available: PropTypes.bool.isRequired,
+    selected: PropTypes.bool.isRequired,
+  }).isRequired,
+  handleCoinBalance: PropTypes.func.isRequired,
+  selectedPlayers: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Hero;

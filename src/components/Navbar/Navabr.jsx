@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const Navbar = ({ coinBalance }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = ({ coinBalance }) => {
 
         {/* Coin Section */}
         <div className="flex items-center space-x-2 border-2 p-2 border-gray-300 rounded-xl">
-          <span className="text-white ">{coinBalance} Coins</span> 
+          <span className="text-white ">{coinBalance} Coins</span>
           <span>
             <img src="./coin.png" alt="Coin" className="h-6 w-6" />
           </span>
@@ -25,7 +26,10 @@ const Navbar = ({ coinBalance }) => {
 
         {/* Hamburger Icon */}
         <div>
-          <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="text-gray-800 focus:outline-none"
+          >
             <i className="fa-solid fa-bars fa-lg text-white"></i>
           </button>
         </div>
@@ -53,7 +57,7 @@ const Navbar = ({ coinBalance }) => {
 
         {/* Coin Section */}
         <div className="flex items-center space-x-2 border-2 p-2 border-gray-300 rounded-xl">
-          <span className="text-white ">{coinBalance} Coins</span> 
+          <span className="text-white ">{coinBalance} Coins</span>
           <span>
             <img src="./coin.png" alt="Coin" className="h-6 w-6" />
           </span>
@@ -62,7 +66,7 @@ const Navbar = ({ coinBalance }) => {
 
       <ul
         className={`${
-          isOpen ? 'block' : 'hidden'
+          isOpen ? "block" : "hidden"
         } absolute top-16 left-0 w-full bg-[#1D232A] md:hidden text-gray-600`}
       >
         <li className="text-gray-400 font-medium hover:text-[#0BE58A] p-2">
@@ -80,6 +84,10 @@ const Navbar = ({ coinBalance }) => {
       </ul>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  coinBalance: PropTypes.number.isRequired,
 };
 
 export default Navbar;

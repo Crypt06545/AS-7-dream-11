@@ -76,6 +76,8 @@ function App() {
         <SelectP
           selectedPlayers={selectedPlayers}
           handleRemovePlayer={handleRemovePlayer}
+          handleToggleBtn={handleToggleBtn}
+          toggleBtn={toggleBtn}
         />
       )}
 

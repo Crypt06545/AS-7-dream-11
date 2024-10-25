@@ -1,4 +1,6 @@
-const ToggleBtn = ({ handleToggleBtn, toggleBtn,selectedPlayers }) => {
+import PropTypes from "prop-types";
+
+const ToggleBtn = ({ handleToggleBtn, toggleBtn, selectedPlayers }) => {
   return (
     <div className="absolute -mb-[650px] lg:ml-[1050px]">
       <div className="flex justify-center gap-4 items-center sticky z-40">
@@ -25,9 +27,27 @@ const ToggleBtn = ({ handleToggleBtn, toggleBtn,selectedPlayers }) => {
         >
           Selected ({selectedPlayers.length})
         </button>
-      </div>  
+      </div>
     </div>
   );
+};
+
+// Define prop types
+ToggleBtn.propTypes = {
+  handleToggleBtn: PropTypes.func.isRequired,
+  toggleBtn: PropTypes.shape({
+    available: PropTypes.bool.isRequired,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
+  selectedPlayers: PropTypes.arrayOf(
+    PropTypes.shape({
+      player_Id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      role: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      bidding_price: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default ToggleBtn;

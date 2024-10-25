@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Card = ({ handleSelectPlayer }) => {
   const [cards, setCards] = useState([]);
@@ -78,6 +79,9 @@ const Card = ({ handleSelectPlayer }) => {
       </div>
     </div>
   );
+};
+Card.propTypes = {
+  handleSelectPlayer: PropTypes.func.isRequired,
 };
 
 export default Card;

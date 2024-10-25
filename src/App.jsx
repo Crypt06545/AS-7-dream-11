@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import "./App.css";
 import Navbar from "./components/Navbar/Navabr";
 import Hero from "./components/Hero/Hero";
 import Card from "./components/Card/Card";
@@ -12,7 +11,7 @@ function App() {
     available: true,
     status: "active",
   });
-  console.log(toggleBtn);
+
 
   // handleToggleBtn event listener
 const handleToggleBtn = (status) => {
@@ -33,7 +32,7 @@ const handleToggleBtn = (status) => {
   return (
     <>
       <Navbar />
-      <Hero handleToggleBtn={handleToggleBtn}/>
+      <Hero toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn}/>
       <Card />
       <Footer />
       <Newsletter />

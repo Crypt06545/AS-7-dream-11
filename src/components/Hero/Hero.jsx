@@ -1,6 +1,6 @@
 import ToggleBtn from "../ToggleBtn/ToggleBtn";
 
-const Hero = ({handleToggleBtn}) => {
+const Hero = ({handleToggleBtn,toggleBtn}) => {
     return (
       <div
         className="w-11/12 mx-auto my-11 bg-cover bg-center flex justify-center items-center bg-black relative"
@@ -22,7 +22,7 @@ const Hero = ({handleToggleBtn}) => {
             
           </div>
         </div>
-        <ToggleBtn handleToggleBtn={handleToggleBtn}/>
+        <ToggleBtn toggleBtn={toggleBtn} handleToggleBtn={handleToggleBtn}/>
       </div>
     );
   };

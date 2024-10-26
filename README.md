@@ -15,7 +15,7 @@ Welcome to **DREAM 11**, a React-based application that allows users to select a
     </tr>
 </table>
 
-## Sneak Peek of Home Page 🙈 : [Go Live](https://dream11-06.netlify.app/)
+## Sneak Peek of Home Page 🙈 : [Go Live](https://dream-11-5.netlify.app)
 ![home](./pitures/home.png)
 
 <table>
